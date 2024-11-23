@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabacaria & Headshop</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+            .product {
+                width: 90%; /* Ajusta a largura dos produtos para telas menores */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 15px;
+            }
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+            .product {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabacaria & Headshop</h1>
+        <p>Produtos de qualidade para apreciadores e entusiastas</p>
+    </header>
+    <nav>
+        <a href="#about">Sobre</a>
+        <a href="#products">Produtos</a>
+        <a href="#contact">Contato</a>
+    </nav>
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma loja especializada em produtos de tabacaria e acessórios de headshop. Oferecemos itens de alta qualidade e atendimento personalizado para nossos clientes.</p>
+    </section>
+    <section id="products">
+        <h2>Produtos</h2>
+        <div class="products">
+            <div class="product">
+                <h3>Narguilé</h3>
+                <p>Modelos de alta qualidade.</p>
+                <p>R$ 250,00</p>
+            </div>
+            <div class="product">
+                <h3>Isqueiros</h3>
+                <p>Variedade de marcas e estilos.</p>
+                <p>R$ 20,00</p>
+            </div>
+            <div class="product">
+                <h3>Ervas aromáticas</h3>
+                <p>Seleção premium.</p>
+                <p>R$ 50,00</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco pelo e-mail: <strong>contato@tabacariaheadshop.com</strong></p>
+        <p>Ou pelo telefone: <strong>(11) 98765-4321</strong></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Tabacaria & Headshop. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
